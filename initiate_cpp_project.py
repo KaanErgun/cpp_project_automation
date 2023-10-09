@@ -5,6 +5,7 @@ import sys
 import platform
 import subprocess
 import threading
+import time
 
 VERSION = "0.1.8"
 
