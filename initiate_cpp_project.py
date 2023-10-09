@@ -16,12 +16,12 @@ def is_tool_installed(name):
 def is_connected():
     try:
         import requests
-        response = requests.get("https://www.google.com", timeout=5)
+        response = requests.get("https://www.kaanergun.com", timeout=5)
         return True
     except ImportError:
         subprocess.run(["pip3", "install", "requests"])
         import requests
-        response = requests.get("https://www.google.com", timeout=5)
+        response = requests.get("https://www.kaanergun.com", timeout=5)
         return True
     except requests.ConnectionError:
         return False
